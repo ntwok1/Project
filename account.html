@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://img.icons8.com/small/24/000000/barcode.png" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="css/all.css">
+
+  <title>Prototype Home</title>
+</head>
+
+<body>
+  <input type="checkbox" id="nav-toggle" style="display: none" checked />
+
+  <div class="sidebar">
+    <h2>
+      <label class="sidebar-brand" for="nav-toggle">
+        <span class="las la-bars"></span>
+        <span class="las la-barcode"></span>
+        <span>TheChosen</span>
+      </label>
+    </h2>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <!-- <a href="home.html" class="active"> -->
+          <a href="home.html">
+            <span class="las la-home"></span>
+
+            <span>Trang Chủ</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="orders.html" class="active">
+            <span class="las la-shopping-bag"></span>
+            <span>Quản Lý Đơn Hàng</span>
+          </a>
+        </li>
+        <!-- <input type="checkbox" id="btn-1" style="display: none" checked /> -->
+        <li>
+          <a href="products.html">
+            <span class="las la-receipt"></span>
+            <span>Quản Lý Sản Phẩm</span>
+          </a>
+        </li>
+        <li>
+          <a href="account.html">
+            <span class="las la-user"></span>
+            <span>Quản Lý Tài Khoản</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <label class="modal-backdrop1" for="nav-toggle"></label>
+
+  <div class="main-content">
+    <header>
+      <h2>
+        <label class="sidebar-brand" for="nav-toggle">
+          <span class="las la-bars"></span>
+          <span></span>
+          <span></span>
+          <span>ARIC</span>
+        </label>
+      </h2>
+
+      <input type="checkbox" id="btn-5" style="display: none" />
+      <label class="user-wrapper" for="btn-5">
+        <label class="modal-backdrop" for="btn-5"></label>
+        <img src="img/ess.png" width="40px" height="40px" alt="" />
+        <div>
+          <h4>Aric Dang</h4>
+          <small>Super admin</small>
+        </div>
+        <ul>
+          <li>
+            <a href="account.html">
+              <span class="las la-info-circle"></span>
+              <span>Thông tin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html">
+              <span class="las la-sign-out-alt"></span>
+              <span>Đăng xuất</span>
+            </a>
+          </li>
+        </ul>
+      </label>
+    </header>
+
+    <main class="main">
+      <div class="info-tab">
+        <div class="mytabs">
+          <input type="radio" id="tab-1" name="mytabs" checked="checked">
+          <label for="tab-1" class="latab">THÔNG TIN CÁ NHÂN</label>
+          <div class="tab">
+            <div class="main-board account">
+              <div class="tabbed1 info">
+                <div class="recent-grid security">
+
+                  <div class="security left">
+                    <div class="content">
+                      <span>.</span>
+                    </div>
+                    <div class="profile">
+
+                      <img src="img/ess.png" alt="">
+                    </div>
+
+                    <div class="info-img">
+                      <div class="nickname">
+                        <h4>Aric Dang</h4>
+                        <li>Mã nhân viên: 999</li>
+                        <span> Super Admin</span>
+                      </div>
+                      <div class="upimg">
+                        <input id="modal-toggle" type="checkbox">
+                        <label class="modal-btn" for="modal-toggle"><span class="las la-camera"></span></label>
+                        <label class="modal-backdrop" for="modal-toggle"></label>
+                        <div class="modal-content">
+                          <label class="modal-close" for="modal-toggle">&#x2715;</label>
+                          <h2>CẬP NHẬT HÌNH ẢNH</h2>
+                          <hr />
+                          <img src="img/ess.png" alt="">
+                          <label class="modal-content-btn" for="modal-toggle">Tải ảnh
+                            lên</label>
+                          <label class="modal-content-btn-1" for="modal-toggle">Xác
+                            nhận</label>
+                          <label class="modal-content-btn-1" for="modal-toggle">Hủy</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="security right">
+                    <div class="text-header info">
+                      <h3>Thông tin cá nhân</h3>
+                    </div>
+                    <div class="info-data">
+                      <ul class="data1">
+                        <li>Họ và tên: </li>
+                        <p>Aric Dang</p>
+                        <li>Ngày sinh:</li>
+                        <p>06/02/2000</p>
+                        <li>Nơi sinh:</li>
+                        <p>Miền tây</p>
+                        <li>Địa chỉ:</li>
+                        <p>TP.HCM</p>
+                        <li>Email:</li>
+                        <p>AricDang@gmail.com</p>
+                        <li>Số điện thoại:</li>
+                        <p>035-252-555</p>
+                        <li>Tình trạng hôn nhân:</li>
+                        <p>Alone</p>
+                      </ul>
+                      <ul class="data2">
+                        <li>Giới tính:</li>
+                        <p>Nam</p>
+                        <li>CMND:</li>
+                        <p>123456789</p>
+                        <li>Ngày cấp:</li>
+                        <p>20/08/2016</p>
+                        <li>Nơi cấp:</li>
+                        <p>TP.HCM</p>
+                        <li>Ngày đầu đi làm:</li>
+                        <p>11/11/2011</p>
+                        <li>Ngày kết thúc:</li>
+                        <p>11/11/2011</p>
+                        <li>Trình độ học vấn:</li>
+                        <p>100/100</p>
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+                <!-- <div class="recent-grid info">
+                  <div class="left">
+                    <div class="profile">
+                      <img src="img/ess.png" alt="">
+                      <div class="content">
+                      </div>
+                    </div>
+                    <div class="info-img">
+                      <div class="nickname">
+                        <h4>Aric Dang</h4>
+                        <li>Mã nhân viên: 999</li>
+                        <span> Super Admin</span>
+                      </div>
+                      <div class="upimg">
+                        <input id="modal-toggle" type="checkbox">
+                        <label class="modal-btn" for="modal-toggle"><span class="las la-camera"></span></label>
+                        <label class="modal-backdrop" for="modal-toggle"></label>
+                        <div class="modal-content">
+                          <label class="modal-close" for="modal-toggle">&#x2715;</label>
+                          <h2>CẬP NHẬT HÌNH ẢNH</h2>
+                          <hr />
+                          <img src="img/ess.png" alt="">
+                          <label class="modal-content-btn" for="modal-toggle">Tải ảnh
+                            lên</label>
+                          <label class="modal-content-btn-1" for="modal-toggle">Xác
+                            nhận</label>
+                          <label class="modal-content-btn-1" for="modal-toggle">Hủy</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="right">
+                    <div class="text-header info">
+                      <h3>Thông tin cá nhân</h3>
+                    </div>
+                    <div class="info-data">
+                      <ul class="data1">
+                        <li>Họ và tên: </li>
+                        <p>Aric Dang</p>
+                        <li>Ngày sinh:</li>
+                        <p>06/02/2000</p>
+                        <li>Nơi sinh:</li>
+                        <p>Miền tây</p>
+                        <li>Địa chỉ:</li>
+                        <p>TP.HCM</p>
+                        <li>Email:</li>
+                        <p>AricDang@gmail.com</p>
+                        <li>Số điện thoại:</li>
+                        <p>035-252-555</p>
+                        <li>Tình trạng hôn nhân:</li>
+                        <p>Alone</p>
+                      </ul>
+                      <ul class="data2">
+                        <li>Giới tính:</li>
+                        <p>Nam</p>
+                        <li>CMND:</li>
+                        <p>123456789</p>
+                        <li>Ngày cấp:</li>
+                        <p>20/08/2016</p>
+                        <li>Nơi cấp:</li>
+                        <p>TP.HCM</p>
+                        <li>Ngày đầu đi làm:</li>
+                        <p>11/11/2011</p>
+                        <li>Ngày kết thúc:</li>
+                        <p>11/11/2011</p>
+                        <li>Trình độ học vấn:</li>
+                        <p>100/100</p>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <ul>
+                                          <input class="inp" type="submit" value="Lấy mã">
+                                      </ul> -->
+              </div>
+            </div>
+          </div>
+          <input type="radio" id="tab-2" name="mytabs">
+          <label for="tab-2" class="latab">BẢO MẬT TÀI KHOẢN</label>
+          <div class="tab">
+            <div class="main-board account">
+              <div class="tabbed1 security">
+                <div class="recent-grid security">
+                  <input type="radio" id="tab-security-0" name="bt" checked="checked">
+                  <input type="radio" id="tab-security-1" name="bt">
+                  <input type="radio" id="tab-security-2" name="bt">
+                  <input type="radio" id="tab-security-3" name="bt">
+                  <input type="radio" id="tab-security-4" name="bt">
+                  <div class="security left">
+                    <label for="tab-security-0"></label>
+                    <ul>
+                      <li class="tab-security-1"><label for="tab-security-1" class="las la-lock">
+                          <span> Thay đổi mật khẩu</span></label>
+                      </li>
+                      <li class="tab-security-2"><label for="tab-security-2" class="las la-mobile">
+                          <span> Thay đổi số điện thoại</span></label>
+                      </li>
+                      <li class="tab-security-3"><label for="tab-security-3" class="las la-user">
+                          <span> Thay đổi thông tin</span></label>
+                      </li>
+                      <li class="tab-security-4"><label for="tab-security-4" class="lab la-facebook">
+                          <span> Kết nối facebook</span></label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="security right">
+                    <div class="secur-info check">
+                      <div class="text-header secur">
+                        <h3>Đổi mật khẩu</h3>
+                      </div>
+                      <div class="top">
+                        <div class="icon">
+                          <p>Cao</p>
+                        </div>
+                        <div class="text-right">
+                          <ul class="text right1">
+                            <li><a href=""><span class="las la-exclamation-circle"></span>Hành động
+                                ngay
+                                để tăng
+                                cường
+                                mức độ bảo mật
+                                tài khoản của bạn.</a></li>
+                            <li><a href=""><span class="las la-exclamation-circle"></span>Mật khẩu
+                                của
+                                bạn quá yếu.
+                              </a> </li>
+
+                          </ul>
+                          <ul class="text right2">
+                            <li><a href=""><span class="las la-check-circle"></span>Địa chỉ
+                                email
+                                (hoa****@gmail.com)
+                                đã được
+                                xác nhận.</a></li>
+                            <li><a href=""><span class="las la-check-circle"></span>Tài
+                                khoản của bạn đã
+                                liên kết
+                                với
+                                số điện
+                                thoại (+84 ****2620).</a></li>
+                            <li><a href=""><span class="las la-check-circle"></span>Bạn đã
+                                xác nhận tài
+                                khoản với
+                                số
+                                chứng minh
+                                nhân dân 0822****</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="bot">
+                        <hr>
+                        <div class="text-header secur">
+                          <h3>Hoạt động tài khoản</h3>
+                        </div>
+                        <div class="card security">
+                          <div class="card-body">
+                            <div class="table-responsive">
+                              <table width="100%">
+                                <thead>
+                                  <tr>
+                                    <td>Ngày Tháng</td>
+                                    <td>Quốc Gia</td>
+                                    <td>IP</td>
+                                    <td>Hoạt động</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>2021-02-19 10:32:9</td>
+                                    <td>VN</td>
+                                    <td>27:64.200.232</td>
+                                    <td>Thay đổi mật khẩu</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-02-19 10:32:9</td>
+                                    <td>VN</td>
+                                    <td>27:64.200.232</td>
+                                    <td>Thay đổi mật khẩu</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-02-19 10:32:9</td>
+                                    <td>VN</td>
+                                    <td>27:64.200.232</td>
+                                    <td>Thay đổi mật khẩu</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-02-19 10:32:9</td>
+                                    <td>VN</td>
+                                    <td>27:64.200.232</td>
+                                    <td>Thay đổi mật khẩu</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="secur-info p1">
+                      <div class="text-header secur">
+                        <h3>Đổi mật khẩu</h3>
+                      </div>
+                      <div class="secur-text p1">
+                        <p>Ấn nút Lấy mã ở dưới để nhận được mã xác nhận qua tin nhắn SMS. Lưu
+                          ý: Đối với
+                          mạng
+                          Vietnamobile, quý khách sẽ nhận được
+                          cuộc gọi thoại nhận mã OTP.</p>
+                        <span class="las la-mobile"> +8438****620</span>
+                        <ul>
+                          <input type="text" placeholder="  Mã xác nhận">
+                          <input type="submit" value="Lấy mã">
+                        </ul>
+                        <input type="submit" class="inp" value="Xác nhận">
+                        <hr class="hr">
+                      </div>
+                    </div>
+                    <div class="secur-info p2">
+                      <div class="text-header secur">
+                        <h3>Thay đổi số điện thoại</h3>
+                      </div>
+                      <div class="secur-text p2">
+                        <p>Ấn nút Lấy mã ở dưới để nhận được mã xác nhận qua tin nhắn SMS. Lưu
+                          ý: Đối với
+                          mạng
+                          Vietnamobile, quý khách sẽ nhận được
+                          cuộc gọi thoại nhận mã OTP.</p>
+                        <span class="las la-mobile"> +8438****620</span>
+                        <ul>
+                          <input type="text" placeholder="  Mã xác nhận">
+                          <input type="submit" value="Lấy mã">
+                        </ul>
+                        <input type="submit" class="inp" value="Xác nhận">
+                        <hr class="hr">
+                      </div>
+                    </div>
+                    <div class="secur-info p3">
+                      <div class="text-header secur">
+                        <h3>Thông tin tài khoản</h3>
+                      </div>
+                      <div>
+                        <ul class="account l">
+                          <li>Tên tài khoản:</li>
+                          <li>Mật khẩu:</li>
+                          <li>Họ và tên:</li>
+                          <li>Ngày sinh:</li>
+                          <li>Số điện thoại:</li>
+                          <li>Email:</li>
+                          <li>CMND:</li>
+
+                        </ul>
+                        <ul class="account r">
+                          <li>AricDang</li>
+                          <li>********</li>
+                          <li>Aric Dang</li>
+                          <li>9/9/9999</li>
+                          <li>********20</li>
+                          <li>aric****@gmail.com</li>
+                          <li>0822*********</li>
+                        </ul>
+                        <input type="submit" value="Lưu thay đổi">
+                      </div>
+                    </div>
+                    <div class="secur-info p4">
+                      <div class="text-header secur">
+                        <h3>Kết nối facebook</h3>
+                      </div>
+                      <div class="secur-text p4">
+                        <p>Kết nối tài khoản với facebook của bạn.</p>
+                        <input type="submit" class="inp" value="Kết nối">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input type="radio" id="tab-3" name="mytabs">
+          <label for="tab-3" class="latab">FAQ</label>
+          <div class="tab">
+            <div class="main-board">
+              <div class="tabbed1 faq">
+                <div class="recent-grid faq">
+                  <div class="mid">
+                    <p>
+                      Q:Làm thế nào để bảo mật tài khoản Garena của tôi?<br>
+                      A:
+                      Có một số thao tác bạn có thể thực hiện để đảm bảo an toàn cho tài khoản của
+                      bạn.<br>
+                      1. Cài đặt một mật khẩu độc nhất và khó đoán, sử dụng kết hợp giữa chữ cái,
+                      số và
+                      các ký hiệu.<br>
+                      2. Không cho ai khác biết mật khẩu. Thay đổi mật khẩu thường xuyên.<br>
+                      3. Đăng ký số điện thoại gắn với tài khoản để bật tính năng Xác thực 2 bước
+                      khi thay
+                      đổi mật khẩu hoặc cập nhật thông
+                      tin.<br>
+                      4. Không cho phép các thiết bị công cộng nhớ thông tin tài khoản của
+                      bạn.<br>
+                      5. Liên hệ bộ phận CSKH ngay lập tức nếu bạn phát hiện những biểu hiện lạ
+                      với tài
+                      khoản của bạn.<br>
+                      <br class="br">
+                      Q:Làm thế nào để bảo mật tài khoản Garena của tôi?<br>
+                      A:
+                      Có một số thao tác bạn có thể thực hiện để đảm bảo an toàn cho tài khoản của
+                      bạn.<br>
+                      1. Cài đặt một mật khẩu độc nhất và khó đoán, sử dụng kết hợp giữa chữ cái,
+                      số và
+                      các ký hiệu.<br>
+                      2. Không cho ai khác biết mật khẩu. Thay đổi mật khẩu thường xuyên.<br>
+                      3. Đăng ký số điện thoại gắn với tài khoản để bật tính năng Xác thực 2 bước
+                      khi thay
+                      đổi mật khẩu hoặc cập nhật thông
+                      tin.<br>
+                      4. Không cho phép các thiết bị công cộng nhớ thông tin tài khoản của
+                      bạn.<br>
+                      5. Liên hệ bộ phận CSKH ngay lập tức nếu bạn phát hiện những biểu hiện lạ
+                      với tài
+                      khoản của bạn.<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="js/table.js"></script>
+</body>
+
+</html>

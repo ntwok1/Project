@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://img.icons8.com/small/24/000000/barcode.png" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="css/all.css">
+  <title>Prototype Home</title>
+</head>
+
+<body>
+  <input type="checkbox" id="nav-toggle" style="display: none" checked />
+
+  <div class="sidebar">
+    <h2>
+      <label class="sidebar-brand" for="nav-toggle">
+        <span class="las la-bars"></span>
+        <span></span>
+        <span></span>
+        <span>ARIC</span>
+      </label>
+    </h2>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <!-- <a href="home.html" class="active"> -->
+          <a href="home.html">
+            <span class="las la-home"></span>
+
+            <span>Trang Chủ</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="orders.html">
+            <span class="las la-shopping-bag"></span>
+            <span>Quản Lý Đơn Hàng</span>
+          </a>
+        </li>
+        <!-- <input type="checkbox" id="btn-1" style="display: none" checked /> -->
+        <li>
+          <a href="products.html" class="active">
+            <span class="las la-receipt"></span>
+            <span>Quản Lý Sản Phẩm</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="las la-user"></span>
+            <span>Quản Lý Tài Khoản</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="las la-chart-pie"></span>
+            <span>Thống Kê</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <label class="modal-backdrop1" for="nav-toggle"></label>
+
+  <div class="main-content">
+    <header>
+      <h2>
+        <label class="sidebar-brand" for="nav-toggle">
+          <span class="las la-bars"></span>
+          <span></span>
+          <span></span>
+          <span>ARIC</span>
+        </label>
+      </h2>
+
+      <input type="checkbox" id="btn-5" style="display: none" />
+      <label class="user-wrapper" for="btn-5">
+        <label class="modal-backdrop" for="btn-5"></label>
+        <img src="img/ess.png" width="40px" height="40px" alt="" />
+        <div>
+          <h4>Aric Dang</h4>
+          <small>Super admin</small>
+        </div>
+        <ul>
+          <li>
+            <a href="account.html">
+              <span class="las la-info-circle"></span>
+              <span>Thông tin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html">
+              <span class="las la-sign-out-alt"></span>
+              <span>Đăng xuất</span>
+            </a>
+          </li>
+        </ul>
+      </label>
+    </header>
+
+    <main>
+      <div class="main-board">
+        <div class="tabbed account">
+          <input type="radio" id="tab1" name="css-tabs" checked />
+          <input type="radio" id="tab2" name="css-tabs" />
+
+
+          <ul class="tabs">
+            <li class="tab">
+              <label for="tab1">Cập nhật thông tin sản phẩm</label>
+            </li>
+            <li id="modal-toggle-n0-table" class="tab">
+              <label for="tab2">Mô tả sản phẩm</label>
+            </li>
+
+          </ul>
+          <div class="tab-content">
+            <div class="card-content flex-container n-product">
+              <div class="card-singel left">
+                <div class="card-header">
+                  <h3>Thông tin chi tiết sản phẩm</h3>
+                </div>
+                <div class="card-body body-card">
+                  <div class="card-details">
+                    <div class="detail-inputs">
+                      <div class="detail">
+                        <div><span>Mã sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Tên sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Số lượng sản phẩm hiện tại:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Màu sắc:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Giá tiền ( 1 sản phẩm/VND ):</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+
+                      <div class="detail">
+                        <div><span>Loại sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Kích cỡ:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Nhà sản xuất:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Trạng thái sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Tình trạng khuyến mãi:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Thời gian bảo hành:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Nhân viên thêm sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Ngày tạo sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                    </div>
+                    <div class="detail-buttons">
+                      <input type="button" class="sub-button" value="Làm mới" />
+                      <input type="button" class="main-button" value="Cập nhật thông tin" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-singel right">
+                <div class="card-header">
+                  <h3>Ảnh đại diện sản phẩm</h3>
+                </div>
+                <div class="card-body body-card">
+                  <input type="button" class="main-button" value="Lưu hình ảnh" />
+                  <div class="img-container">
+                    <div class="card-header">
+                      <h3>Ảnh đại diện</h3>
+                    </div>
+                    <div class="card-img">
+                      <div class="i-img">
+                        <span class="las la-plus-circle"></span>
+
+                        <img src="img/products/1 (1).jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-container">
+                    <div class="card-header">
+                      <h3>Ảnh chi tiết</h3>
+                    </div>
+                    <div class="card-img">
+                      <div class="i-img n-img">
+                        <span class="las la-plus-circle"></span>
+                      </div>
+                      <div class="i-img n-img">
+                        <span class="las la-plus-circle"></span>
+                      </div>
+                      <div class="i-img n-img">
+                        <span class="las la-plus-circle"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div class="card-singel">
+              <div class="card-header">
+                <h3>Danh sách mô tả chi tiết sản phẩm</h3>
+              </div>
+              <div class="card-body body-card">
+
+                <div class="card-table">
+                  <table id="table-n0" class="" style="width: 100%">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>MÃ</th>
+                        <th>THỨ TỰ</th>
+                        <th>HÌNH ẢNH</th>
+                        <th>MÔ TẢ</th>
+                        <th>Trạng thái</th>
+                        <th>NGÀY cập nhật</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                      <tr>
+                        <th>STT</th>
+                        <th>MÃ</th>
+                        <th>THỨ TỰ</th>
+                        <th>HÌNH ẢNH</th>
+                        <th>MÔ TẢ</th>
+                        <th>Trạng thái</th>
+                        <th>Ngày Cập nhật</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="js/table.js"></script>
+</body>
+
+</html>

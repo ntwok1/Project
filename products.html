@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://img.icons8.com/small/24/000000/barcode.png" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="css/all.css">
+  <title>Prototype Home</title>
+</head>
+
+<body>
+  <input type="checkbox" id="nav-toggle" style="display: none" checked />
+
+  <div class="sidebar">
+    <h2>
+      <label class="sidebar-brand" for="nav-toggle">
+        <span class="las la-bars"></span>
+        <span class="las la-barcode"></span>
+        <span>ARIC</span>
+      </label>
+    </h2>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <!-- <a href="home.html" class="active"> -->
+          <a href="home.html">
+            <span class="las la-home"></span>
+
+            <span>Trang Chủ</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="orders.html">
+            <span class="las la-shopping-bag"></span>
+            <span>Quản Lý Đơn Hàng</span>
+          </a>
+        </li>
+        <!-- <input type="checkbox" id="btn-1" style="display: none" checked /> -->
+        <li>
+          <a href="products.html" class="active">
+            <span class="las la-receipt"></span>
+            <span>Quản Lý Sản Phẩm</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="las la-user"></span>
+            <span>Quản Lý Tài Khoản</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="las la-chart-pie"></span>
+            <span>Thống Kê</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <label class="modal-backdrop1" for="nav-toggle"></label>
+
+  <div class="main-content">
+    <header>
+      <h2>
+        <label class="sidebar-brand" for="nav-toggle">
+          <span class="las la-bars"></span>
+          <span></span>
+          <span></span>
+          <span>ARIC</span>
+        </label>
+      </h2>
+
+      <input type="checkbox" id="btn-5" style="display: none" />
+      <label class="user-wrapper" for="btn-5">
+        <label class="modal-backdrop" for="btn-5"></label>
+        <img src="img/ess.png" width="40px" height="40px" alt="" />
+        <div>
+          <h4>Aric Dang</h4>
+          <small>Super admin</small>
+        </div>
+        <ul>
+          <li>
+            <a href="account.html">
+              <span class="las la-info-circle"></span>
+              <span>Thông tin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html">
+              <span class="las la-sign-out-alt"></span>
+              <span>Đăng xuất</span>
+            </a>
+          </li>
+        </ul>
+      </label>
+    </header>
+
+    <main>
+      <div class="main-board">
+        <div class="tabbed account">
+          <input type="radio" id="tab1" name="css-tabs" checked />
+          <input type="radio" id="tab2" name="css-tabs" />
+
+
+          <ul class="tabs">
+            <li class="tab">
+              <label for="tab1">Bảng tổng hợp sản phẩm</label>
+            </li>
+            <li class="tab">
+              <label for="tab2">Thêm sản phẩm mới</label>
+            </li>
+
+          </ul>
+          <div class="tab-content">
+            <div class="card-content grid-container t-product">
+              <div class="card-singel left-top">
+                <div class="card-header">
+                  <h3>Danh sách quản lý</h3>
+                </div>
+                <div class="card-body body-card">
+                  <div class="type-container">
+                    <input type="checkbox" id="modal-toggle-t1" style="display: none" />
+                    <label for="modal-toggle-t1">
+                      <div id="modal-toggle-t1-table" class="btn-modal">
+                        <span>Loại sản phẩm</span>
+                      </div>
+                    </label>
+                    <label class="modal-backdrop-3" for="modal-toggle-t1"></label>
+                    <div class="modal-content">
+                      <div class="content">
+                        <div class="grid-container">
+                          <div class="card-singel left-full">
+                            <div class="card-header">
+                              <h3>Danh sách loại sản phẩm</h3>
+                            </div>
+                            <div class="card-body body-card sub">
+                              <div class="card-table">
+                                <table id="table-t1-sub" style="width: 100%">
+                                  <thead>
+                                    <tr>
+                                      <th>STT</th>
+                                      <th>MÃ</th>
+                                      <th>Tên loại sản phẩm</th>
+                                      <th>NGÀY cập nhật</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                      <th>STT</th>
+                                      <th>MÃ</th>
+                                      <th>Tên loại sản phẩm</th>
+                                      <th>NGÀY cập nhật</th>
+                                    </tr>
+                                  </tfoot>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-singel right-top">
+                            <div class="card-header">
+                              <h3>Cập nhật</h3>
+                            </div>
+                            <div class="card-body body-card input">
+                              <div class="card-details">
+                                <div class="detail-inputs">
+                                  <div class="detail">
+                                    <div><span>Mã loại:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div><span>Tên loại sản phẩm:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                </div>
+                                <div class="detail-buttons">
+                                  <input type="button" class="main-button" value="Cập nhật " />
+                                  <input type="button" class="sub-button" value="Xóa" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-singel right-bottom">
+                            <div class="card-header">
+                              <h3>Thêm mới</h3>
+                            </div>
+                            <div class="card-body body-card input">
+                              <div class="card-details">
+                                <div class="detail-inputs">
+                                  <div class="detail">
+                                    <div><span>Mã loại:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div><span>Tên loại sản phẩm:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                </div>
+                                <div class="detail-buttons">
+                                  <input type="button" class="main-button" value="Thêm mới" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <label class="close-btn" for="modal-toggle-t1">
+                            <div class="btn-modal"><span>Đóng</span></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="supplier-container">
+                    <input type="checkbox" id="modal-toggle-t2" style="display: none" />
+                    <label for="modal-toggle-t2">
+                      <div id="modal-toggle-t2-table" class="btn-modal">
+                        <span>Nhà sản xuất</span>
+                      </div>
+                    </label>
+
+                    <label class="modal-backdrop-3" for="modal-toggle-t2"></label>
+
+                    <div class="modal-content">
+                      <div class="content">
+                        <div class="grid-container">
+                          <div class="card-singel left-full">
+                            <div class="card-header">
+                              <h3>Danh sách nhà sản xuất</h3>
+                            </div>
+                            <div class="card-body body-card sub">
+                              <div class="card-table">
+                                <table id="table-t2-sub" style="width: 100%">
+                                  <thead>
+                                    <tr>
+                                      <th>STT</th>
+                                      <th>MÃ</th>
+                                      <th>Tên nhà sản xuất</th>
+                                      <th>NGÀY cập nhật</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                      <th>STT</th>
+                                      <th>MÃ</th>
+                                      <th>Tên nhà sản xuất</th>
+                                      <th>NGÀY cập nhật</th>
+                                    </tr>
+                                  </tfoot>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-singel right-top">
+                            <div class="card-header">
+                              <h3>Cập nhật</h3>
+                            </div>
+                            <div class="card-body body-card input">
+                              <div class="card-details">
+                                <div class="detail-inputs">
+                                  <div class="detail">
+                                    <div><span>Mã nhà sản xuất:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div><span>Tên nhà sản xuất:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                </div>
+                                <div class="detail-buttons">
+                                  <input type="button" class="main-button" value="Cập nhật " />
+                                  <input type="button" class="sub-button" value="Xóa" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-singel right-bottom">
+                            <div class="card-header">
+                              <h3>Thêm mới</h3>
+                            </div>
+                            <div class="card-body body-card input">
+                              <div class="card-details">
+                                <div class="detail-inputs">
+                                  <div class="detail">
+                                    <div><span>Mã nhà sản xuất:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div><span>Tên nhà sản xuất:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                </div>
+                                <div class="detail-buttons">
+                                  <input type="button" class="main-button" value="Thêm mới" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <label class="close-btn" for="modal-toggle-t2">
+                            <div class="btn-modal"><span>Đóng</span></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="discount-container">
+                    <input type="checkbox" id="modal-toggle-t3" style="display: none" />
+                    <label for="modal-toggle-t3">
+                      <div id="modal-toggle-t3-table" class="btn-modal">
+                        <span>Khuyến mãi</span>
+                      </div>
+                    </label>
+
+                    <label class="modal-backdrop-3" for="modal-toggle-t3"></label>
+
+                    <div class="modal-content">
+                      <div class="content">
+                        <div class="grid-container">
+                          <div class="card-singel left-full">
+                            <div class="card-header">
+                              <h3>Danh sách khuyến mãi</h3>
+                            </div>
+                            <div class="card-body body-card sub">
+                              <div class="card-table">
+                                <table id="table-t3-sub" style="width: 100%">
+                                  <thead>
+                                    <tr>
+                                      <th>STT</th>
+                                      <th>Tỷ lệ giảm giá</th>
+                                      <th>Tên giảm giá</th>
+                                      <th>Ngày bắt đầu</th>
+                                      <th>Ngày hết hạn</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                      <td>qv203</td>
+                                      <td>qv203</td>
+                                      <td>Kìa con bướm</td>
+                                      <td>28/10/2000</td>
+                                    </tr>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                      <th>STT</th>
+                                      <th>Tỷ lệ giảm giá</th>
+                                      <th>Tên giảm giá</th>
+                                      <th>Ngày bắt đầu</th>
+                                    </tr>
+                                  </tfoot>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-singel right-top">
+                            <div class="card-header">
+                              <h3>Cập nhật</h3>
+                            </div>
+                            <div class="card-body body-card input">
+                              <div class="card-details">
+                                <div class="detail-inputs">
+                                  <div class="detail">
+                                    <div><span>Tỷ lệ:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div>
+                                      <span>Tên khuyến mãi:</span>
+                                    </div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div>
+                                      <span>Ngày bắt đầu:</span>
+                                    </div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div>
+                                      <span>Ngày kết thúc:</span>
+                                    </div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                </div>
+                                <div class="detail-buttons">
+                                  <input type="button" class="main-button" value="Cập nhật " />
+                                  <input type="button" class="sub-button" value="Xóa" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-singel right-bottom">
+                            <div class="card-header">
+                              <h3>Thêm mới</h3>
+                            </div>
+                            <div class="card-body body-card input">
+                              <div class="card-details">
+                                <div class="detail-inputs">
+                                  <div class="detail">
+                                    <div><span>Tỷ lệ:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div>
+                                      <span>Tên khuyến mãi:</span>
+                                    </div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div>
+                                      <span>Ngày bắt đầu:</span>
+                                    </div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div>
+                                      <span>Ngày kết thúc:</span>
+                                    </div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                </div>
+                                <div class="detail-buttons">
+                                  <input type="button" class="main-button" value="Thêm mới" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <label class="close-btn" for="modal-toggle-t3">
+                            <div class="btn-modal"><span>Đóng</span></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="guarantee-container">
+                    <input type="checkbox" id="modal-toggle-t4" style="display: none" />
+                    <label for="modal-toggle-t4">
+                      <div id="modal-toggle-t4-table" class="btn-modal">
+                        <span>Bảo hành</span>
+                      </div>
+                    </label>
+
+                    <label class="modal-backdrop-3" for="modal-toggle-t4"></label>
+
+                    <div class="modal-content">
+                      <div class="content">
+                        <div class="grid-container">
+                          <div class="card-singel left-full">
+                            <div class="card-header">
+                              <h3>Danh sách bảo hành sản phẩm</h3>
+                            </div>
+                            <div class="card-body body-card sub">
+                              <div class="card-table">
+                                <table id="table-t4-sub" style="width: 100%">
+                                  <thead>
+                                    <tr>
+                                      <th>STT</th>
+                                      <th>MÃ</th>
+                                      <th>Mã bảo hành</th>
+                                      <th>Thông tin bảo hành</th>
+                                      <th>NGÀY cập nhật</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <td></td>
+                                    <td>qv203</td>
+                                    <td>qv203</td>
+                                    <td>qv203</td>
+                                    <td>qv203</td>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                      <th>STT</th>
+                                      <th>MÃ</th>
+                                      <th>Mã bảo hành</th>
+                                      <th>Thông tin bảo hành</th>
+                                      <th>NGÀY cập nhật</th>
+                                    </tr>
+                                  </tfoot>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-singel right-top">
+                            <div class="card-header">
+                              <h3>Cập nhật</h3>
+                            </div>
+                            <div class="card-body body-card input">
+                              <div class="card-details">
+                                <div class="detail-inputs">
+                                  <div class="detail">
+                                    <div><span>Mã bảo hành:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div>
+                                      <span>Thông tin bảo hành:</span>
+                                    </div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                </div>
+                                <div class="detail-buttons">
+                                  <input type="button" class="main-button" value="Cập nhật " />
+                                  <input type="button" class="sub-button" value="Xóa" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-singel right-bottom">
+                            <div class="card-header">
+                              <h3>Thêm mới</h3>
+                            </div>
+                            <div class="card-body body-card input">
+                              <div class="card-details">
+                                <div class="detail-inputs">
+                                  <div class="detail">
+                                    <div><span>Mã bảo hành:</span></div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                  <div class="detail">
+                                    <div>
+                                      <span>Thông tin bảo hành:</span>
+                                    </div>
+                                    <input type="text" placeholder="......" />
+                                  </div>
+                                </div>
+                                <div class="detail-buttons">
+                                  <input type="button" class="main-button" value="Thêm mới" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <label class="close-btn" for="modal-toggle-t4">
+                            <div class="btn-modal"><span>Đóng</span></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-singel left-bottom">
+                <div class="card-header">
+                  <h3>Thông tin sản phẩm</h3>
+                </div>
+                <div class="card-body body-card">
+                  <div class="card-details">
+                    <p class="product-info-item">
+                      <span>-Mã:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Tên:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Số Lượng:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Giá:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Loại:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Nhà sản xuất:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Khuyến mãi:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Bảo Hành:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Mô Tả:</span> <span>123</span>
+                    </p>
+                    <p class="product-info-item">
+                      <span>-Trạng thái:</span> <span>123</span>
+                    </p>
+                    <a href="productdetail.html">
+                      <input type="button" class="sub-button" value="Cập nhật mô tả" />
+                    </a>
+                    <a href="productdetail.html">
+                      <input type="button" class="main-button" value="Chỉnh sửa" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-singel right-full">
+                <div class="card-header">
+                  <h3>Danh sách sản phẩm</h3>
+                </div>
+                <div class="card-body body-card">
+                  <div class="card-table">
+                    <table id="table" class="" style="width: 100%">
+                      <thead>
+                        <tr>
+                          <th>STT</th>
+                          <th>MÃ</th>
+                          <th>TÊN</th>
+                          <th>SỐ LƯỢNG</th>
+                          <th>GIÁ (VND)</th>
+                          <th>LOẠI</th>
+                          <th>Kích cỡ</th>
+                          <th>NSX</th>
+                          <th>KHUYẾN MÃI</th>
+                          <th>MÔ TẢ</th>
+                          <th>BẢO HÀNH</th>
+                          <th>Trạng thái</th>
+                          <th>NGÀY THÊM</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <td></td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th>STT</th>
+                          <th>MÃ</th>
+                          <th>TÊN</th>
+                          <th>SỐ LƯỢNG</th>
+                          <th>GIÁ (VND)</th>
+                          <th>LOẠI</th>
+                          <th>Kích cỡ</th>
+                          <th>NSX</th>
+                          <th>KHUYẾN MÃI</th>
+                          <th>MÔ TẢ</th>
+                          <th>BẢO HÀNH</th>
+                          <th>Trạng thái</th>
+                          <th>NGÀY THÊM</th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div class="card-content flex-container n-product">
+              <div class="card-singel left">
+                <div class="card-header">
+                  <h3>Thông tin chi tiết sản phẩm</h3>
+                </div>
+                <div class="card-body body-card">
+                  <div class="card-details">
+                    <div class="detail-inputs">
+                      <div class="detail">
+                        <div><span>Mã sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Tên sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Số lượng sản phẩm hiện tại:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Màu sắc:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Giá tiền ( 1 sản phẩm/VND ):</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+
+                      <div class="detail">
+                        <div><span>Loại sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Kích cỡ:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Nhà sản xuất:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Trạng thái sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Tình trạng khuyến mãi:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Thời gian bảo hành:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Nhân viên thêm sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                      <div class="detail">
+                        <div><span>Ngày tạo sản phẩm:</span></div>
+                        <input type="text" placeholder="......" />
+                      </div>
+                    </div>
+                    <div class="detail-buttons">
+                      <input type="button" class="sub-button" value="Làm mới" />
+                      <input type="button" class="main-button" value="Lưu và tạo mô tả" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-singel right">
+                <div class="card-header">
+                  <h3>Ảnh đại diện sản phẩm</h3>
+                </div>
+                <div class="card-body body-card">
+
+                  <div class="img-container">
+                    <div class="card-header">
+                      <h3>Ảnh đại diện</h3>
+                    </div>
+                    <div class="card-img">
+                      <div class="i-img">
+                        <span class="las la-plus-circle"></span>
+
+                        <img src="img/products/1 (1).jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-container">
+                    <div class="card-header">
+                      <h3>Ảnh chi tiết</h3>
+                    </div>
+                    <div class="card-img">
+                      <div class="i-img n-img">
+                        <span class="las la-plus-circle"></span>
+                      </div>
+                      <div class="i-img n-img">
+                        <span class="las la-plus-circle"></span>
+                      </div>
+                      <div class="i-img n-img">
+                        <span class="las la-plus-circle"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+
+          </div>
+        </div>
+    </main>
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="js/table.js"></script>
+</body>
+
+</html>

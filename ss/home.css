@@ -1,0 +1,203 @@
+.sidebar {
+  width: 260px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--main-color);
+  z-index: 100;
+}
+
+
+.sidebar-brand {
+  padding: 1rem 0rem 1rem 1rem;
+  height: 64px;
+  font-size: 25px;
+  color: var(--sub-color);
+  background: var(--main-color);
+  display: flex;
+}
+
+.sidebar-brand span:first-child {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.sidebar-brand span:not(:last-child, :first-child) {
+  float: left;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.sidebar-menu {
+  overflow: auto;
+  height: 100%;
+} 
+
+.sidebar-menu a {
+  width: 100%;
+  padding-left: 1rem;
+  display: flex;
+  height: 50px;
+  color: var(--sub-light-color);
+  font-size: 1rem;
+  transition: all 0.4s ease;
+  gap: 17px;
+  align-items: center;
+}
+
+.sidebar-menu a span:first-child {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+}
+
+.sidebar-menu a span:last-child {
+  font-size: 1rem;
+}
+
+.sidebar-menu a:hover {
+  background: var(--sub-color);
+  color: var(--main-color);
+}
+
+.sidebar-menu a.active {
+  background: var(--sub-color);
+  color: var(--main-color);
+}
+
+.sidebar-menu a.active:hover {
+  color: var(--text-color);
+}
+
+.main-content header {
+  background: var(--main-color);
+  color: var(--text-menu);
+}
+
+/* thẻ đầu bắt đầu */
+header {
+  
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+header h2 {
+  color: #222;
+}
+
+
+/* .search-wrapper {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.search-wrapper span {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.6rem;
+}
+
+.search-wrapper input {
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+} */
+
+.modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in;
+}
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  color: var(--text-color);
+}
+
+.user-wrapper img {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+}
+.user-wrapper:hover img {
+  border: 2px solid var(--sub-color);
+}
+.user-wrapper small {
+  display: inline-block;
+  color: var(--text-grey);
+}
+
+.user-wrapper ul {
+  display: none;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 4rem;
+  background: rgba(255, 204, 204, 0.3);
+  backdrop-filter: blur(10px); /* This will produce the blur */
+ 
+  border: 2px solid var(--text-trans-grey);
+  padding-top: .75rem;
+ 
+}
+
+.user-wrapper li {
+  margin-bottom: 1rem;
+  width: 160px;
+}
+
+[id^="btn"]:checked + .user-wrapper ul {
+  display: block;
+  z-index: 50;
+}
+
+[id^="btn"]:checked + .user-wrapper .modal-backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+}
+
+.user-wrapper a {
+  padding-left: 1rem;
+  color: var(--text-color);
+  font-size: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-wrapper a:hover {
+  color: var(--sub-color);
+}
+
+.user-wrapper span {
+  display: inline-block;
+  font-size: 1rem;
+}

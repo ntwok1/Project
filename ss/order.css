@@ -1,0 +1,221 @@
+.tab-content .card-content.grid-container.t-order {
+  grid-template-columns: 25% auto;
+  grid-template-rows: 0.25fr auto;
+  grid-template-areas:
+    "left-top right-full"
+    "left-bottom right-full";
+}
+
+.card-singel.left-bottom .card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.order-info-item {
+  display: flex;
+  padding: 0 0.5rem;
+}
+
+.order-info-item span {
+  white-space: nowrap;
+}
+
+.order-info-item span:first-child {
+  width: 10rem;
+}
+
+.card-singel.left-bottom .card-body input {
+  width: 100%;
+}
+
+.card-singel.left-bottom .card-body input{
+  margin-bottom: 0;
+}
+
+.card-singel.left-top .card-body {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.card-singel.left-top .card-body input {
+  width: 100%;
+}
+
+ .card-singel.left {
+  width: 60%;
+}
+.card-singel.right {
+  width: 40%;
+}
+ .card-singel.left .card-body {
+  overflow: auto;
+}
+.card-singel.left .card-body .card-details {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 0.5rem;
+  white-space: nowrap;
+}
+ .card-singel.left .card-body .card-details .detail-inputs{
+  width: 100%;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(3 , 1fr);
+}
+.card-details .detail-buttons{
+  display: flex;
+  justify-content:space-between;
+}
+.card-singel.left .card-body .detail input {
+  width: 100%;
+}
+
+
+.card-singel.right .main-button {
+  margin: 0;
+}
+.card-singel.right .img-container {
+  margin: 1rem 0;
+}
+
+.card-singel.right .img-container {
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+}
+
+.card-singel.right .img-container .card-header {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.img-container .card-img {
+  height: calc(100vh - 710px);
+  width: 100%;       
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  overflow: auto;
+}
+
+.img-container .card-img .i-img {
+  background-color: var(--sub-light-color);
+  border: 0.5rem solid var(--main-color);
+  border-radius: 10px;
+  position: relative;
+}
+
+.img-container .card-img .i-img:not(.n-img) span {
+  opacity: 0;
+}
+
+.img-container .card-img .i-img.n-img span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  z-index: 2;
+}
+
+.img-container .card-img .i-img:hover > span {
+  opacity: 1;
+  z-index: 2;
+  color: var(--sub-color);
+}
+
+.img-container .card-img .i-img:hover {
+  border: 0.5rem solid var(--sub-color);
+}
+
+.img-container .card-img .i-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.dataTables_scrollBody{
+  background-color: var(--sub-trans);
+}
+.n-order .toolbar .sub.t1{
+  display: none;
+}
+
+#modal-toggle-t1:checked ~ .modal-content,
+#modal-toggle-t2:checked ~ .modal-content,
+#modal-toggle-t3:checked ~ .modal-content,
+#modal-toggle-t4:checked ~ .modal-content{
+  display: block;
+}
+
+.modal-content{
+  width: 90%;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-content .content{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+.content .grid-container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas:
+    "left-full right-top"
+    "left-full right-bottom"
+    "btn-modal btn-modal";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content .close-btn{
+  grid-area: btn-modal;
+  
+}
+.content .grid-container .card-body{
+  overflow: auto;
+}
+
+.modal-content .card-body.input{
+  display: flex;
+  justify-content: center;
+}
+.modal-content .card-details{
+   justify-content: center;
+  display:flex;
+  flex-direction: column;
+  gap: .5rem;
+  white-space: nowrap;
+  width: 90%;
+}
+.modal-content .card-details .detail-inputs{
+  width: 100%;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(2 , 1fr);
+}
+.modal-content .card-details .detail-buttons{
+  display: flex;
+  gap: .5rem;
+}
+#modal-toggle-t1:checked ~ .modal-backdrop-3,
+#modal-toggle-t2:checked ~ .modal-backdrop-3,
+#modal-toggle-t3:checked ~ .modal-backdrop-3,
+#modal-toggle-t4:checked ~ .modal-backdrop-3{
+  display: block;
+}

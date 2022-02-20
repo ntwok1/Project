@@ -1,0 +1,540 @@
+.main {
+  background: linear-gradient(to right, #587cdf, #01dfaf); /* màu account */
+  min-height: calc(100vh - 85px);
+}
+
+.info-tab {
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(170, 170, 170, 0.5);
+}
+/* tabs info, secur , faq start */
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+.mytabs input[type="radio"] {
+  display: none;
+}
+.mytabs label {
+  width: 28%;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.mytabs .latab:hover {
+  background: #efefef;
+}
+.mytabs .tab {
+  margin-top: 5rem;
+  margin-left: 15rem;
+  order: 1;
+  display: none;
+  border-color: #1a202e;
+  align-items: center;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+  border-bottom: 5px solid red;
+  padding-bottom: 1px;
+}
+.main-board.account {
+  margin-top: 1rem;
+  border-radius: 10px 10px 10px 10px;
+  height: calc(90vh - 150px);
+  width: 1200px;
+}
+.main-board-a.product {
+  margin-top: 1rem;
+  border-radius: 10px 10px 10px 10px;
+  height: calc(90vh - 150px);
+  width: 100px;
+}
+.main-board {
+  margin-top: 1rem;
+  border-radius: 10px 10px 10px 10px;
+  height: calc(90vh - 150px);
+}
+.main-board .tabbed {
+  padding: 1rem;
+  background: white;
+  border-radius: 10px 10px 10px 10px;
+}
+.mytab .tab .recent-grid.info {
+  display: grid;
+  grid-gap: 1rem;
+  margin-left: 5rem;
+  grid-template-columns: 20%;
+  grid-template-areas: "left right";
+}
+
+.recent-grid.info .left {
+  grid-area: left;
+  background: linear-gradient(to right, #01a9ac, #01dbdf);
+  height: 600px;
+  width: 250px;
+}
+
+.tab .left img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.tab .left h4 {
+  margin-bottom: 10px;
+}
+
+.tab .left p {
+  font-size: 12px;
+}
+
+.recent-grid.info .right {
+  grid-area: right;
+  margin-left: 5rem;
+  width: 870px;
+  height: 600px;
+  background: #efefef;
+}
+
+.tab .right .info {
+  margin-bottom: 25px;
+}
+
+.tab .right .text-header.info {
+  padding: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.tab .right .info-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.tab .right .info-data ul li {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.tab .right .info-data ul p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #76838f;
+  margin-bottom: 20px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #246df5;
+  transition: 0.2s;
+}
+.left .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.left .profile:hover {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #d10fd8;
+}
+
+/* cập nhật hình ảnh */
+.info-img {
+  margin-top: 2rem;
+  text-align: center;
+}
+.info-img .nickname {
+  margin-left: 0.5rem;
+}
+.info-img .nickname h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.info-img .upimg span {
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: -9rem;
+  background: rgb(197, 197, 197);
+  border-radius: 50%;
+  font-size: 1.6rem;
+  transition: background 0.3s ease-in;
+}
+.info-img .upimg span:hover {
+  background: #84868b;
+}
+
+.info-img .upimg .modal-btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+
+.info-img .upimg .modal-content,
+.info-img .upimg .modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+}
+.upimg .modal-close {
+  color: #aaa;
+  position: absolute;
+  right: 5px;
+  top: -15px;
+  padding-top: 3px;
+  background: #fff;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.upimg .modal-close:hover {
+  color: #333;
+}
+.info-img .upimg .modal-content-btn {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  bottom: 20px;
+  left: 0;
+  background: #e64e4e;
+  color: #fff;
+  width: 250px;
+  border-radius: 2px;
+  font-size: 14px;
+  padding-top: 9px;
+}
+.info-img .upimg .modal-content-btn-1 {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  bottom: 20px;
+  right: 30px;
+  background: #446cb3;
+  color: #fff;
+  width: 100px;
+  border-radius: 2px;
+  font-size: 14px;
+  padding-top: 9px;
+}
+
+.info-img .upimg .modal-content-btn-1:last-child {
+  right: 140px;
+  background: none;
+  color: #446cb3;
+  width: 80px;
+}
+.info-img .upimg .modal-content-btn-1:hover {
+  background: #1f8fc3;
+}
+.info-img .upimg .modal-content-btn-1:last-child:hover {
+  background: rgb(180, 179, 179);
+  width: 80px;
+  border-radius: 5px;
+  color: none;
+}
+.info-img .upimg .modal-content-btn:hover {
+  color: #446cb3;
+}
+
+.upimg #modal-toggle {
+  display: none;
+}
+
+.upimg #modal-toggle:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.upimg #modal-toggle:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 1000px;
+  width: 700px;
+  height: 500px;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 200px);
+  top: 12%;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+.upimg h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.upimg img {
+  margin-top: 3rem;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #246df5;
+} /* cập nhật hình ảnh end */
+
+/* secur start */
+.mytab .tab .recent-grid.security {
+  display: grid;
+  grid-gap: 1rem;
+  margin-left: 5rem;
+  grid-template-columns: 20%;
+  grid-template-areas: "left right";
+}
+/* secur left */
+.recent-grid.security .security.left {
+  grid-area: left;
+  background: linear-gradient(to right, #01a9ac, #01dbdf);
+  height: 600px;
+  width: 250px;
+}
+
+.mytabs .tab .security.left ul label {
+  display: inline;
+  margin-left: 0.1rem;
+  font-size: 1.1rem;
+  line-height: 3rem;
+}
+.mytabs .tab .security.left ul span {
+  font-size: 1.1rem;
+}
+
+.mytabs .tab .security.left ul li:hover {
+  background: #a39898;
+  width: 250px;
+}
+
+#tab-security-1:checked ~ .security.left ul .tab-security-1,
+#tab-security-2:checked ~ .security.left ul .tab-security-2,
+#tab-security-3:checked ~ .security.left ul .tab-security-3,
+#tab-security-4:checked ~ .security.left ul .tab-security-4 {
+  background: rgb(212, 184, 197);
+  width: 250px;
+} /* secur left  end*/
+
+/* secur right */
+.recent-grid.security .security.right {
+  grid-area: right;
+  margin-left: 18rem;
+  margin-top: -37.5rem;
+  height: 600px;
+  width: 870px;
+  background: #efefef;
+}
+
+#tab-security-0:checked ~ .security.right .secur-info.check,
+#tab-security-1:checked ~ .security.right .secur-info.p1,
+#tab-security-2:checked ~ .security.right .secur-info.p2,
+#tab-security-3:checked ~ .security.right .secur-info.p3,
+#tab-security-4:checked ~ .security.right .secur-info.p4 {
+  display: inline;
+}
+
+.mytabs .tab .secur-info {
+  display: none;
+}
+.tab .security.right .text-header.secur {
+  padding: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.security.right .secur-info.check .icon {
+  float: left;
+  margin-top: 2rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 75%;
+  margin-left: 2rem;
+  box-shadow: 0 0 0 15px #246df5;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.security.right .secur-info.check .icon p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.security.right .secur-info.check .text-right {
+  float: right;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+}
+.security.right .secur-info.check .text-right ul li {
+  font-size: 1rem;
+  margin-right: 3rem;
+}
+.security.right .secur-info.check .text-right ul li span {
+  font-size: 1.2rem;
+  padding-top: 0.2rem;
+  padding-right: 0.5rem;
+}
+.security.right .secur-info.check .text-right .text.right1 li a {
+  color: rgb(2, 2, 2);
+}
+.security.right .secur-info.check .text-right .text.right1 li a:hover {
+  color: var(--blue-black);
+}
+.security.right .secur-info.check .text-right .text.right1 li span {
+  color: red;
+}
+.security.right .secur-info.check .text-right .text.right2 li span {
+  color: green;
+}
+.security.right .secur-info.check .text-right .text.right2 {
+  margin-top: 0.5rem;
+}
+.security.right .secur-info.check .text-right .text.right2 li a {
+  color: rgb(211, 211, 211);
+}
+.security.right .secur-info.check .text-right .text.right2 li a:hover {
+  color: rgb(211, 0, 0);
+}
+
+.security.right .secur-info.check .bot {
+  margin-top: 12rem;
+}
+.security.right .secur-info.check .bot hr {
+  width: 750px;
+  height: 2px;
+  background: #e2adad;
+  border: #efefef;
+}
+.security.right .secur-info.check .bot .text-header.secur {
+  margin-top: 1rem;
+}
+
+.mytabs .tab .security.right .secur-info .secur-text p {
+  padding: 2rem;
+  line-height: 1.5rem;
+}
+.mytabs .tab .security.right .secur-info .secur-text span {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+.mytabs .tab .security.right .secur-info .secur-text ul input:first-child {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  width: 250px;
+  height: 40px;
+}
+.mytabs .tab .security.right .secur-info .secur-text ul input:last-child {
+  width: 90px;
+  border: 1px solid #e64e4e;
+  border-radius: 5px;
+  height: 40px;
+  color: red;
+  background: none;
+  cursor: pointer;
+}
+.mytabs .tab .security.right .secur-info .secur-text ul input:last-child:hover {
+  width: 90px;
+  height: 40px;
+  color: black;
+  background: #e64e4e;
+}
+.mytabs .tab .security.right .secur-info .secur-text .inp {
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 350px;
+  height: 50px;
+  background: #e64e4e;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+.mytabs .tab .security.right .secur-info .secur-text .inp:hover {
+  color: #000000;
+}
+.security.right .secur-info.p3 div .account {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.security.right .secur-info.p3 input {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  width: 550px;
+  height: 50px;
+  background-color: #e64e4e;
+  border-radius: 3px;
+}
+.security.right .secur-info.p3 input:hover {
+  color: white;
+  background: #e187a1;
+}
+.security.right .secur-info.p3 div .account.l {
+  float: left;
+  padding-bottom: 5rem;
+}
+.security.right .secur-info.p3 div .account.l li {
+  padding-bottom: 1.5rem;
+}
+.security.right .secur-info.p3 div .account.r {
+  float: right;
+}
+.security.right .secur-info.p3 div .account.r li {
+  border-bottom: 1px solid rgb(73, 67, 67);
+  margin-bottom: 1.4rem;
+  width: 600px;
+}
+.security.right .secur-info.p3 div .account.r li:hover {
+  border-bottom: 2px solid rgb(145, 240, 227);
+  color: #01a9ac;
+} /* secur right end */
+
+.mytabs .tab .mid {
+  background: #efefef;
+  width: 1100px;
+  height: 600px;
+}
+.mytabs .tab .mid p {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* tabs info, secur , faq end */
